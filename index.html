@@ -4,29 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mergaite</title>
-    <style>
-        main {
+    <!-- comments (add / remove: CTRL + /) -->
+    <!--TODO: add favicon element-->
+    <link href="favicon.png" rel="icon" type="image/png">
+   <style>
+        /* stiliaus suvienodinimas visiems elementams */
+        body,
+        body * {
+                margin 0;
+                padding: 0;
+                vertical-align: top;
+                box-sizing: border-box;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        /* mano norimas psl stilius */
+        Body {
+            background-color: #F8F8F8;
+        }
+        body>main {
             display: inline-block;
             width: 800px;
-            margin-top: 40px;
-            background-color:rgb(236, 236, 236);
+            margin-top: 20px;
             margin-left: calc((100% - 800px) / 2);
+            color: #9E9E9E
         }
+
         header {
             display: inline-block;
             width: 100%;
+        
         }
-        section {
+        header>img {
             display: inline-block;
-            width: 100%;
-        }
-        img {
-            display: inline-block;
-            float: left
+            float: left;
+           height: 50px;
+            /* height: 200px; - headery'je nuotraukos turetu buti ribojamos tiktai pagal auksti */ 
         }
         nav {
             display: inline-block;
-            float: right   
+            float: right;  
+            margin-top: 10px;
+        }
+        a {
+            display: inline-block;
+            padding: 2px;
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-left: 10px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #9e9e9e;
+            border: 2px solid transparent;
+        }
+
+        a:last-of-type {
+            text-transform: uppercase;
+            border-color: #9E9E9E;
+            border-radius: 22px;
+
+        }
+        Section { 
+            display: inline-block;
+            width: 100%;
+            padding: 20px;
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        div {
+            display: inline-block;
+            /* check width */
+            width: 46%;
+            float: left;
+            margin-right: 40px;
+            margin-top: 30px;
+        }
+        section > img {
+            display: inline-block;
+            float: right;
+            width: 46%;
+            /* width: 360px; - Turinyje nuotraukoms pirmenybe skiriama riboti pagal ploti */
+            
+        }
+        h1 {
+            display: inline-block;
+            width: 100%;
+            font-size: 60px;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        p {
+            display: inline-block;
+            font-size: 24px;
+            width: 100%;
+            margin-top: 0;
+            margin-bottom: 0;
         }
     </style>
 </head>
@@ -46,8 +118,12 @@
         </header>
         <section>
             <div>
-                <h1>404</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+               <!-- TODO: susitvarkyti margin h1 - kad dingtu is virsaus ir is apacios # -->
+               <h1>404</h1>
+
+              <!-- TODO susitvarkyti islygiavima paragrafo -->
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
             </div>
             <img src="mergaite.png" alt="Mergaite">
         </section>
